@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body style="">
+    <form name="login" method="POST" action="#">
+        <h2>LOGIN:</h2>
+        <p>
+            <label for="user">User</label>
+            <input type="text" id="user" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" required pattern="[a-z]+@[a-z]+\.[a-z]+">
+        </p>
+        <p><label for="password">Password</label>
+            <input type="password" id="password" required pattern="[A-Za-z]+[0-9]+\W_"></p>
+        <p><input type="submit" value="ENVIAR"></p>
+    </form>
+    <br><br>
+    <form name="signup" method="" action="">
+        <h2>SIGN UP:</h2>
+        <p>
+            <label for="">Name:</label>
+            <input type="text" id="name" required pattern="[A-Z]+">
+        </p>
+        <p>
+            <label for="">Surname:</label>
+            <input type="text" id="surname" required pattern="[A-Z]+">
+        </p>
+        <p>
+            <select name="studies" id="studies" multiple>
+                <option value="fpmedio">FP Medio</option>
+                <option value="fpsuperior">FP Superior</option>
+                <option value="dipl/licenc">Diplomatura / Licenciatura</option>
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" name="vehicle1" value="Bike">Inscrito en Garantia Juvenil<br>
+            <input type="checkbox" name="vehicle2" value="Car"><strong>NO</strong> inscrito<br>
+        </p>
+        <p><input type="submit" value="ENVIAR"></p>
+    </form>
+</body>
+
+</html>
